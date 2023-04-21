@@ -1,0 +1,75 @@
+:root{
+    --cor1 : #7A461B;
+    --cor2 : #FAE2D2;
+    --cor3 : #C7712B;
+    --cor4 : #FA8F37;
+    --cor5 : #7A5A40;
+}
+
+
+
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container{
+    max-width: 960px; /* Largura máxima. Encolhe se necessário */
+    margin:auto; /*centralizado */
+}
+
+nav{
+    background-color: var(--cor2);
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+
+main, section{
+    background-color: var(--cor2);
+    color:#473E34; /* cor da fonte */
+    margin-bottom: 20px;
+
+}
+nav{
+    background-color: var(--cor2);
+    BORDER-RADIUS: 20PX;
+    padding: 10PX;
+    margin-bottom: 20px;
+    
+    
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+a:hover{
+    text-decoration: underline;
+    color:red;
+}
+
+main, section{
+    box-sizing: border-box; /* hack para contabilizar o padding na largura */
+    padding:20px;
+    border-radius: 20px;
+}
+
+/* menu */
+/* ul{
+    /* text-decoration: none; */
+
+
+li{
+    display: inline-block;
+}
+img{
+    border-radius: 10px;;
+}
+
+

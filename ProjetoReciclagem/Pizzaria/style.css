@@ -1,0 +1,168 @@
+:root{
+    scroll-behavior: smooth;
+    --cor1: #8C031C;
+    --cor2: #d38440;
+    --cor3: #f1d5bb;
+    --cor4: #BF3604;
+    --cor5: #F2F2F2;
+    --cor6: #ECF594;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    background-color: var(--cor3);
+    min-height: 100vh;
+    line-height: 2em;
+    padding: 20px;
+}
+a
+header{
+    background-color: var(--cor3);
+    text-align: center;
+
+}
+
+nav{
+    padding: 10px 50px; 
+    text-align: center;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+    padding: 20px;
+
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--cor4);
+    font-size: 20px;
+}
+nav>div:nth-child(4)>a{
+    color: red;
+}
+
+
+section{
+    min-height: 50vh;
+}
+section:first-child{
+    background-color: #e5cac0;
+}
+section:nth-child(2){
+    background-color: #ecd4a4;
+}
+section:nth-child(3){
+    background-color: antiquewhite;
+}
+
+header{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+
+tr:first-child{
+    background-color: #d38440;
+}
+tr:nth-child(2){
+    background-color: var(--cor5);
+}
+tr:nth-child(4){
+    display: none;
+}
+tr:nth-child(5){
+    background-color: var(--cor5);
+}
+tr:nth-child(7){
+    background-color: var(--cor5);
+}
+tr:nth-child(2):hover{
+    background-color: var(--cor6);
+}
+tr:nth-child(3):hover{
+    background-color: var(--cor6);
+}
+tr:nth-child(5):hover{
+    background-color: var(--cor6);
+}
+tr:nth-child(6):hover{
+    background-color: var(--cor6);
+}
+tr:nth-child(7):hover{
+    background-color: var(--cor6);
+}
+
+#endereco{
+    color: #8C031C;
+}
+#sobre{
+    color: #644121;
+}
+address p:first-child::before{
+    content: "Rua: ";
+}
+address p:nth-child(2):before{
+    content: "Bairro: ";
+}
+address p:nth-child(3):after{
+    content: " Santa Catarina ";
+}
+address{
+    text-align: center;
+}
+tr:nth-child(2)>td:nth-child(2):before{
+    content: "R$: ";
+}
+tr:nth-child(3)>td:nth-child(2):before{
+    content: "R$: ";
+}
+tr:nth-child(5)>td:nth-child(2):before{
+    content: "R$: ";
+}
+tr:nth-child(6)>td:nth-child(2):before{
+    content: "R$: ";
+}tr:nth-child(7)>td:nth-child(2):before{
+    content: "R$: ";
+}
+
+
+
+
+
+/*
+* 
+Para esta atividade, você não deve alterar absolutamente nada o arquivo HTML.
+
+ok1 - formate os links como achar mais apropriado em seus estados (link, visited, hover, active) ok
+ok2 - os links devem estar lado a lado (display:inline ou inline-block) ok
+ok3 - a pizza do cheff está em falta, esconda esta linha da tabela (display:none) ok
+ok4 - faça a tabela ser listrada com cores diferentes ok
+ok5 - a primeira linha da tabela (cabeçalho) deve ser com uma cor destaque ok
+ok6 - cada seção deve ter uma cor de fundo diferente
+ok7 - Títulos devem possui cores diferentes em cada seção. No entanto, os parágrafos das seções devem ser de cores iguais.
+ok8 - adicione "R$" nos preços das pizzas
+ok9 - links externos devem possuir uma cor ligeiramente diferente (começa com http)
+ok10 - adicione "Rua" antes do nome da rua "Maria Aparecida Barbosa"
+ok11 - adicione "bairro antes de "Campo Duna"
+ok12 - adicione "Santa Catarina" após o nome da cidade (Garopaba)
+ok13 - ao passar o cursor sobre cada linha da tabela, ela deve ser "iluminada" com outra cor (menos o cabeçalho). 
+	 Dica: combinação de pseudo classes
+ok14 - o texto do endereço deve ser centralizado
+15 - Desenvolva 3 exemplos de uso de pseudo-classes que não foram demonstradas pelo professor
+16 - Desenvolva 2 exemplos de pseudo-elementos que não foram demonstradas pelo professor
+*/

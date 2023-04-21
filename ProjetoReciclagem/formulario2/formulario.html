@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário para envio de currículo</h1>
+        <form action="receber.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input id="nome" type="text" name="nome" required>
+                </div>
+                <div>
+                    <label for="nasc">Data de Nascimeto:</label>
+                    <input type="date" name="nasc" id="nasc" required>
+                </div>
+                <div>
+                    <label for="tel">Número de telefone:</label>
+                    <input id="tel" type="tel" name="tel" required>
+                </div>
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="text" name="sexo" id="sexo" list="s" required>
+                    <datalist id="s">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </datalist>
+                <div>
+                    <label for="senha">Digite sua senha: </label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                </div>
+                <h2>ENDEREÇO</h2>
+                <div>
+                    <label for="cid">Cidade:</label>
+                    <input type="text" name="cid" id="cid" required>
+                </div>
+                <div>
+                    <label for="bairro">bairro:</label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
+                <div>
+                    <label for="enderco">Rua:</label>
+                    <input type="text" name="rua" id="rua" cols="30" required>
+                </div>
+                <div>
+                    <label for="numero">Número:</label>
+                    <input type="number" required>
+                </div>
+                
+
+        
+            </fieldset>
+            <fieldset>
+                <legend>Conhecimentos e experiêcias</legend>
+                <div>
+                    <label for="grad">Graduação</label>
+                    <br>
+                    <textarea name="grad" id="grad" cols="30" rows="1"></textarea>
+                    <br>
+                    <label for="msm">Escreva sobre suas experiêcias:</label>
+                    <br>
+                    <textarea id="msg" name="msg" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vagas de emprego e pretensão salarial</legend>
+                <div>
+                    <label for="area">Área que gostaria de atuar:</label>
+                    <br>
+                    <textarea name="area" id="area" cols="30"></textarea>
+                    <br>
+                    <br>
+                    <label for="salario">Pretenção salarial: R$</label>
+                    <input type="number" name="salario" id="salario">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Termos de Uso</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ipsa, molestiae expedita earum incidunt consequuntur, quibusdam recusandae nisi saepe ut necessitatibus iste soluta. Nemo similique quisquam esse mollitia assumenda delectus!</p>
+                <div>
+                    <label for="termo">Eu li e concordo com os termos de uso</label>
+                    <input type="checkbox" required>
+                </div>
+            </fieldset>
+            <button type="submit">
+                <strong>ENVIAR</strong>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
